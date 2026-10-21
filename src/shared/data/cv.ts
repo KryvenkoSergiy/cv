@@ -600,9 +600,16 @@ export interface PortfolioItem {
 /** The Work page: live demo sites, newest first. */
 export const portfolio: PortfolioItem[] = [
   {
+    id: "runnel",
+    title: "Runnel, a money app for freelancers in four designs",
+    summary: "A landing page for a fictional app that sorts each client payment into taxes, savings and money to spend. It comes in four designs called Paper, Night, Swiss and Soft, and you can switch between them on the same page. Drag a payment into the app to see the split in dollars, euros, pounds or hryvnias.",
+    stack: ["React", "Vite", "View Transitions API", "Pointer Events", "SVG", "CSS"],
+    url: "https://kryvenkosergiy.github.io/Runnel/",
+  },
+  {
     id: "northvale",
-    title: "The Keeper’s Log — a year at Northvale",
-    summary: "A site for a fictional novel, told as 16 real-time WebGL scenes on one lake island: each scroll turns a chapter, the weather and seasons change on screen, and the island's people and animals appear in their chapters.",
+    title: "Northvale, a novel told in 16 WebGL scenes",
+    summary: "A website for a fictional novel about a year on a lake island. Each chapter is a live WebGL scene that you move through by scrolling. The weather and seasons change as the story goes on, and the island's people and animals show up in their own chapters.",
     stack: ["React", "TypeScript", "three.js", "React Three Fiber", "GLSL", "GSAP", "Web Audio"],
     url: "https://kryvenkosergiy.github.io/northvale-demo-book/",
   },

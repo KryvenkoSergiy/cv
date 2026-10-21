@@ -9,7 +9,7 @@ export default function Work() {
         eyebrow="Portfolio"
         title="Selected"
         titleHighlight="Work"
-        subtitle="Live demo sites: how I build UI, not just where."
+        subtitle="Side projects where I try out UI ideas. Each one is live."
       />
 
       <ul className="stagger grid gap-6 md:grid-cols-2">
