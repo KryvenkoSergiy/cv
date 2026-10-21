@@ -26,6 +26,9 @@ jobs:
       - run: npm run build
       # GitHub Pages has no SPA rewrites: serve the app for unknown paths too.
       - run: cp dist/index.html dist/404.html
+      # 404.html answers with HTTP 404, so search engines skip deep links. Pages
+      # serves /cv/<route> from <route>.html with a 200. Keep in step with router.tsx.
+      - run: for r in experience skills about work; do cp dist/index.html dist/$r.html; done
       - uses: actions/upload-pages-artifact@v5
         with:
           path: dist

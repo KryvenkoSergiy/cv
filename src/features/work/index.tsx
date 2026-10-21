@@ -17,7 +17,7 @@ export default function Work() {
           <li key={item.id}>
             <Card interactive className="flex h-full flex-col overflow-hidden">
               <img
-                src={`${import.meta.env.BASE_URL}work/${item.id}/preview.webp`}
+                src={`${import.meta.env.BASE_URL}previews/${item.id}.webp`}
                 alt=""
                 width={1200}
                 height={502}

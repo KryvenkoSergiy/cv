@@ -53,6 +53,8 @@ describe("index.html", () => {
     expect(title).toBe(`${personalInfo.name} — ${personalInfo.title}`);
     expect(description).toContain(`${personalInfo.name} — ${personalInfo.title}`);
     expect(description).toContain(`${personalInfo.yearsOfExperience} years`);
+    expect(indexHtml).toContain(`property="og:title" content="${title}"`);
+    expect(indexHtml).toContain(`property="og:description" content="${description}"`);
   });
 });
 

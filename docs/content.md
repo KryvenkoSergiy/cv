@@ -9,7 +9,7 @@ Everything below is edited in [src/shared/data/cv.ts](../src/shared/data/cv.ts).
 - **Skills:** edit `skillTiers` (and `keySkills` for the highlighted ones). The Skills globe logos are a separate list (`globeIcons` in `features/skills/index.tsx`).
 - **Summary:** `about` (About page + PDF), `heroDescription` and `bringMeInTo` (home hero), `skillsSubtitle`, `personalInfo.openTo` (footer).
 - **How I work / Now:** `howIWork`, `now`. Bump `now.updated` whenever `now.items` changes.
-- **Portfolio (Work page):** `portfolio`. One entry per demo; unique `id`, absolute `url` (tested). Each demo is its own repo and GitHub Pages site (e.g. [northvale-demo-book](https://github.com/KryvenkoSergiy/northvale-demo-book)), not code in this repo. The card shows `public/work/<id>/preview.webp`: a 2.39:1 still, 1200×502.
+- **Portfolio (Work page):** `portfolio`. One entry per demo; unique `id`, absolute `url` (tested). Each demo is its own repo and GitHub Pages site (e.g. [northvale-demo-book](https://github.com/KryvenkoSergiy/northvale-demo-book)), not code in this repo. The card shows `public/previews/<id>.webp`: a 2.39:1 still, 1200×502. (Not `public/work/`: a `work/` folder would shadow the `/work` route on Pages.)
 - **Name, title, years:** `personalInfo`. `index.html` can't import `cv.ts`; update its `<title>` and meta description by hand (a test checks name, title and years).
 
 After text edits run `npm test`: snapshots and the 2-page PDF check ([testing.md](testing.md), [pdf.md](pdf.md)).
